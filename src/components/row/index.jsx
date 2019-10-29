@@ -18,7 +18,7 @@ const Row = ({ title, value, min, max, onChange, money }) => {
       <div className="slider-container">
         <CustomSlider value={value} min={min} max={max} onChange={onChange} />
       </div>
-      <div className="space-between">
+      <div className="space-between padding-horizontal-7">
         <Text className="thin">
           {money && "$"}
           {min}
