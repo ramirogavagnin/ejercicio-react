@@ -1,18 +1,20 @@
 import React, { useState } from "react";
-//import logo from "./logo.svg";
 import "./assets/styles/App.css";
 import Text from "./components/styled-text";
 import CustomSlider from "./components/slider";
 import Row from "./components/row";
+import Swal from "sweetalert2";
 
 function App() {
   const [amount, setAmount] = useState(5000);
   const [monthlyFee, setMonthlyFee] = useState(3);
+
   const fee = () => {
     const total = amount / monthlyFee;
     const totalStr = total.toFixed(2);
     return totalStr;
   };
+
   return (
     <div className="App">
       <div className="content padding-horizontal">
@@ -42,10 +44,25 @@ function App() {
             <Text className="black-lg">${fee()}</Text>
           </div>
           <div className="row-50 space-between">
-            <button className="width-60 green">
+            <button
+              className="width-60 green"
+              onClick={() =>
+                Swal.fire({
+                  type: "success",
+                  title: "¡Enhorabuena!",
+                  text: `Te ha sido otorgado un credito por $${amount}`,
+                  footer: "<a href>En que podemos ayudarte?</a>"
+                })
+              }
+            >
               <Text className="bold">OBTENÉ CRÉDITO</Text>
             </button>
-            <button className="width-30 light-blue">
+            <button
+              className="width-30 light-blue"
+              onClick={() =>
+                Swal.fire(`Tu cuota mensual será de: $${fee()}`, "", "info")
+              }
+            >
               <Text className="bold-sm">VER DETALLE DE CUOTAS</Text>
             </button>
           </div>
