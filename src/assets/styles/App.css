@@ -1,3 +1,5 @@
+/* Main */
+
 .App {
   text-align: center;
   background-color: rgb(32, 79, 129);
@@ -11,35 +13,54 @@
   color: white;
 }
 
-/* .App-logo {
-  height: 40vmin;
-}
-
-
-.App-link {
-  color: #09d3ac;
-} */
+/* Layout */
 
 .content {
-  background-color: rgb(16, 53, 90);
-  /*  background-color: red; */
+  background-color: rgb(19, 59, 100);
   height: 92%;
   width: 80%;
-  /*  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
 }
+
+.header {
+  height: 19vh;
+}
+
+.main {
+  height: 46vh;
+}
+
+.footer {
+  height: 19vh;
+}
+
+.row-50 {
+  height: 50%;
+}
+
+.width-60 {
+  width: 66%;
+  height: 100%;
+}
+
+.width-30 {
+  width: 32%;
+  height: 100%;
+}
+
+/* Padding */
 
 .padding-horizontal-4 {
   padding-left: 4vmin;
   padding-right: 4vmin;
 }
 
-.margin-vertical {
-  margin-top: 4vmin;
-  margin-bottom: 4vmin;
+.padding-horizontal {
+  padding-left: 4vmin;
+  padding-right: 4vmin;
 }
+
+/* Flex */
+
 .center {
   display: flex;
   justify-content: center;
@@ -53,21 +74,7 @@
   align-items: center;
 }
 
-.height-20 {
-  height: 20vh;
-}
-
-.height-60 {
-  height: 60vh;
-}
-
-.border {
-  border: 2px solid white;
-  height: 8vmin;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* Colors */
 
 .light-blue {
   background-color: rgb(32, 79, 129);
@@ -79,4 +86,81 @@
 
 .dark-blue {
   background-color: rgb(16, 53, 90);
+}
+
+.green {
+  background-color: rgb(78, 167, 143);
+}
+
+/* @Media Queries */
+
+@media (min-width: 370px) {
+  .header {
+    height: 20vh;
+  }
+
+  .main {
+    height: 50vh;
+  }
+
+  .footer {
+    height: 21vh;
+  }
+}
+
+@media (min-width: 765px) {
+  .content {
+    background-color: rgb(19, 59, 100);
+    height: 85%;
+    width: 80%;
+  }
+  .header {
+    height: 17vh;
+  }
+
+  .main {
+    height: 47vh;
+  }
+
+  .footer {
+    height: 19vh;
+    margin-top: 2vmin;
+  }
+}
+
+@media (min-width: 1020px) {
+  .content {
+    height: 85%;
+    width: 75%;
+  }
+
+  .padding-horizontal {
+    padding-left: 8vmin;
+    padding-right: 8vmin;
+  }
+}
+
+@media (min-width: 1430px) {
+  .content {
+    height: 80%;
+    width: 75%;
+  }
+
+  .header {
+    height: 15vh;
+  }
+
+  .main {
+    height: 45vh;
+  }
+
+  .footer {
+    height: 18vh;
+    margin-top: 2vmin;
+  }
+
+  .padding-horizontal {
+    padding-left: 10vmin;
+    padding-right: 10vmin;
+  }
 }

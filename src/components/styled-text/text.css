@@ -1,11 +1,51 @@
-.bold {
-  font-weight: 800;
-  font-size: calc(15px + 2vmin);
-  text-align: justify;
+.thin {
+  font-weight: 400;
+  font-size: calc(6px + 2vmin);
+  text-align: center;
 }
 
 .regular {
   font-weight: 500;
+  font-size: calc(9px + 2vmin);
+  text-align: center;
+}
+
+.bold {
+  font-weight: 800;
+  font-size: calc(10px + 2vmin);
+  text-align: center;
+}
+
+.bold-sm {
+  font-weight: 800;
+  font-size: calc(5px + 2vmin);
+  text-align: center;
+}
+
+.black {
+  font-weight: 900;
   font-size: calc(13px + 2vmin);
-  text-align: justify;
+  text-align: center;
+}
+
+.black-lg {
+  font-weight: 900;
+  font-size: calc(12px + 2vmin);
+  text-align: center;
+}
+
+.black-sm {
+  font-weight: 900;
+  font-size: calc(5px + 2vmin);
+  text-align: center;
+}
+
+@media (min-width: 420px) {
+  .black-lg {
+    font-size: calc(15px + 2vmin);
+  }
+
+  .black-sm {
+    font-size: calc(7px + 2vmin);
+  }
 }

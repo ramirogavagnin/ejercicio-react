@@ -7,3 +7,16 @@ body {
   background-color: rgb(32, 79, 129);
   background-image: linear-gradient(rgb(32, 79, 129), rgb(16, 53, 90));
 }
+
+h1 {
+  margin: 0;
+}
+
+button {
+  border: none;
+  border-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}

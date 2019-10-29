@@ -1,14 +1,11 @@
 import React, { useState } from "react";
-import "rc-slider/assets/index.css";
 import Slider, { createSliderWithTooltip } from "rc-slider";
+import "rc-slider/assets/index.css";
 
 const CustomSlider = props => {
   return (
     <Slider
-      min={500}
-      max={2000}
-      // value={value}
-      //   onChange={value => setValue(value)}
+      {...props}
       handleStyle={{
         height: 18,
         width: 18,
